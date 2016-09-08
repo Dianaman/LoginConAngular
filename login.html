@@ -2,8 +2,32 @@
 <html>
 <head>
 	<title>Laboratorio de Computación IV - TP Login con AngularJS</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<form id="formlogin" name="FormLogin">
+		<input type="text" name="apellido" ng-model="persona.apellido" placeholder="Ingrese apellido" required/>
+		<input type="text" name="nombre" ng-model="persona.nombre" placeholder="Ingrese nombre" required/>
+		<input type="number" name="edad" ng-model="persona.edad" placeholder="Ingrese edad" required/>
+		<select name="estado" ng-model="persona.estado">
+			<option value="Soltero">Soltero</option>
+			<option value="Soltero">Casado</option>
+			<option value="Soltero">Divorciado</option>
+			<option value="Soltero">Viudo</option>
+		</select>
 
+<!--
+		Edad (number) min-value max-value min-length max-length
+Sexo (radio) puede o no tener uno seleccionado
+Dni (number)
+Mail (mail)
+Estado (option->select) primer elemento vacio para que ingrese si o si uno
+Fecha de nacimiento (date) fecha del pasado
+Clave (password)
+Copia clave (password) igual al password
+Lenguaje de programacion (checkbox) que este sin valor por defecto
+-->
+	</form>
 </body>
 </html>
