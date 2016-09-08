@@ -18,11 +18,30 @@ form {
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+input[type='number'],
+input[type="date"],
+label{
 	width:90%;
 	height:20px;
 	padding:5px;
 	margin-top: 2%;
 	margin-bottom:2%;
 	border-radius:5px;
+}
+
+select {
+	width:90%;
+	height:30px;
+	padding:5px;
+	margin-top: 2%;
+	margin-bottom:2%;
+	border-radius:5px;
+}
+
+button[type="submit"]{
+	width:30%;
+	left:35%;
+	margin-top: 2%;
+	
 }
